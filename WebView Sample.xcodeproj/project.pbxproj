@@ -83,6 +83,7 @@
 		2BA29294184801E3000852AA /* WebView Sample */ = {
 			isa = PBXGroup;
 			children = (
+				C74D355619329F1A00DAF6BD /* iPad */,
 				2BA2929D184801E3000852AA /* AppDelegate.h */,
 				2BA2929E184801E3000852AA /* AppDelegate.m */,
 				2BA292A6184801E3000852AA /* MainStoryboard.storyboard */,
@@ -105,6 +106,13 @@
 				2BA292A4184801E3000852AA /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C74D355619329F1A00DAF6BD /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = iPad;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +265,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WebView Sample/WebView Sample-Prefix.pch";
 				INFOPLIST_FILE = "WebView Sample/WebView Sample-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -268,7 +278,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WebView Sample/WebView Sample-Prefix.pch";
 				INFOPLIST_FILE = "WebView Sample/WebView Sample-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -292,6 +304,7 @@
 				2BA292B0184801E3000852AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

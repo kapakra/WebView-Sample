@@ -18,6 +18,24 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    //load url into webview
+    NSString *strURL = @"http://192.168.1.99/test3.html";
+    NSURL *url = [NSURL URLWithString:strURL];
+    NSURLRequest *urlRequest = [NSURLRequest requestWithURL:url];
+    [self.webview loadRequest:urlRequest];
+    
+    /*
+    //load html content into webview
+    NSString *embedHTML = @"<html><head></head><body><h2>UIWebView Sample App</h2><p>1.Display a web site.<br>2.Load and html file.<br>3.load an html data.<br></p></body></html>";
+    
+    [self.webview loadHTMLString:embedHTML baseURL:nil];
+    
+    //load an html file into webview
+    NSString *htmlFile = [[NSBundle mainBundle] pathForResource:@"sample" ofType:@"html"];
+    NSString* htmlString = [NSString stringWithContentsOfFile:htmlFile encoding:NSUTF8StringEncoding error:nil];
+    [self.webview loadHTMLString:htmlString baseURL:nil];
+     */
 }
 
 - (void)didReceiveMemoryWarning
